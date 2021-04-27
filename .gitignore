@@ -1,1 +1,8 @@
 .vscode
+.idea
+.cache
+.bash_history
+.DS_store
+
+jenkins_home
+jenkins_logs

@@ -1,15 +1,15 @@
 version: "3.5"
 services:
   jenkins:
-    build: ./.docker
+    container_name: jenkins
+    build:
+      context: .docker/jenkins
+      dockerfile: Dockerfile
+    restart: on-failure
     ports:
       - 8080:8080
       - 50000:50000
     volumes:
+      - ./jenkins_home:/var/jenkins_home
+      - ./jenkins_logs:/var/log/jenkins
       - /var/run/docker.sock:/var/run/docker.sock
-      - jenkins-log:/var/log/jenkins
-      - jenkins-home:/var/jenkins_home
-
-volumes:
-  jenkins-log:
-  jenkins-home:
