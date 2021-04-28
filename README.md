@@ -1,3 +1,5 @@
+Config Nginx https://www.jenkins.io/doc/book/system-administration/reverse-proxy-configuration-nginx/
+
 # Jenkins
 
 ### Configuração inicial
