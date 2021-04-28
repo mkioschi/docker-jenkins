@@ -12,15 +12,15 @@ RC=\033[0m
 # └─────────────────────────────────────────────────────────────────────────────┘
 .PHONY: up
 up:
-	@docker compose up -d
+	@docker-compose up -d
 
 .PHONY: down
 down:
-	@docker compose down
+	@docker-compose down
 
 .PHONY: build
 build:
-	@docker compose build --no-cache
+	@docker-compose build --no-cache
 
 .PHONY: restart
 restart:
